@@ -185,8 +185,6 @@ DETR использует предобученную CNN (например, ResN
 - **Энкодер**: Состоит из \( N \) (обычно 6) слоёв с multi-head self-attention и feed-forward сетями (FFN). Улучшает карту признаков, позволяя токенам обмениваться глобальным контекстом.
 - **Декодер**: Принимает \( N_q = 100 \) обучаемых запросов объектов (векторы размером 256). Использует self-attention (между запросами) и cross-attention (между запросами и токенами энкодера) для предсказания объектов.
 
-![Детали трансформера DETR](https://lh5.googleusercontent.com/SUvC5tAqn7ULVp9X-UFVriG4oHDOjxBpSyRN95B1cwto8TPsy5OFOz2cythx2uv8wVIkkgCapgZ_uzawd8xw1O1xhNwF2ZpuFYhqUZAjhk88-d8FhAy-nwPWFvutHUmUrlHSBDKN5OnLYFvF1wMr1mc)
-
 #### Головы предсказаний
 Каждый запрос объекта обрабатывается feed-forward сетью (FFN):
 - **Классификационная голова**: Предсказывает вероятности классов для \( C+1 \) классов (C объектов + фон) с помощью softmax.
