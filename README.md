@@ -1,6 +1,6 @@
 # 2d-object-detection
 
-![Описание](results_2d_detection/output.gif)
+![Описание](./results_2d_detection/output.gif)
 
 ## 1. Введение
 
